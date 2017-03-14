@@ -23,7 +23,6 @@ Este curso esta orientado para el aprendizaje del lenguaje de programación Java
 		<li> Funciones con parámetros de salida</li>
 		<li> Clases y Objetos</li>
 	</ul>
-
 	<li> Drone</li>
 	<ul>
 		<li> Movimiento de Drones</li>
