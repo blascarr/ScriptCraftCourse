@@ -12,7 +12,6 @@ function getBlockD(){
 var Drone = require('drone'); 
 Drone.extend (getBlockD);
 
-
 function wire( length){
 	
 	for (var i = 1; i <= length; i++) {
