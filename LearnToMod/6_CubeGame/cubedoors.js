@@ -24,9 +24,9 @@ function cube( loc, size, material){
 	};
 	f.box(material, size, 1, size);
 
-	centercube(f.getLocation(), size, 91);
-	doorscube(f.getLocation(), size,material);
-	trapdoorscube(f.getLocation(), size);
+	centercube(loc, size, 91);
+	doorscube(loc, size,material);
+	trapdoorscube(loc, size);
 }
 
 function cubeline( loc,length, material){

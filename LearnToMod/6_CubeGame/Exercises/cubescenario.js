@@ -5,7 +5,7 @@ var material;
 function main(){
 	
 	d = new Drone(me, me.location);
-	size = 15;
+	size = 14;
 	material = 169;
 	var length = 3;
 

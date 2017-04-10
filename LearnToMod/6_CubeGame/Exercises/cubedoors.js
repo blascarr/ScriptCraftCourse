@@ -81,12 +81,17 @@ function doorscube(loc, size,material){
 		//esto es porque hay que hacer una correccion con la direccion
 		// Hay que utilizar la funcion DroneDir.js para conocer cual es la direccion de las puertas que faltan y corregir el movimiento
 
-		/*if (f.dir ==  || f.dir == ){
+		if (f.dir == 1 || f.dir == 2 ){
+			//No hacen puerta
+
 			//...//
+			f.fwd(size/2 -1 ).door2().back(size/2 -1) 
 		}else{
+			//Si hacen puerta
 			//...//
-		}*/
-		
+			f.fwd(size/2).door2().back(size/2)
+		}
+		f.turn()
 	};
 }
 
