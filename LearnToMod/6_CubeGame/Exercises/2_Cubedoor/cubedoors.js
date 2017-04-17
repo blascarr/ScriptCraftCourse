@@ -41,7 +41,17 @@ function hipercube(loc, length, material){
 	};
 }
 
-
+function echodir(dir){
+	if(dir == 0){
+		echo ("Direction 0 : East ");
+	}else if(dir == 1){
+		echo ("Direction: 1 : South ");
+	}else if(dir == 2){
+		echo ("Direction: 2 : West ");
+	}else if(dir == 3){
+		echo ("Direction: 3 : North ");
+	}
+}
 
 //-----------------------------------------------------------//
 //-------------------Funciones a crear------------------------//
@@ -72,7 +82,11 @@ function doorscube(loc, size,material){
 
 	for (var i = 0; i < 4; i++) {
 		//Es necesario prestar atencion a la funcion dir
-		echo ("Direction: "+f.dir);
+		//Este --> 0
+		//Sur --> 1
+		//Oeste --> 2
+		//Norte --> 3
+		echodir(f.dir);
 
 		//Crear las puertas con una sola instruccion
 		//...//
@@ -83,13 +97,14 @@ function doorscube(loc, size,material){
 
 		if (f.dir == 1 || f.dir == 2 ){
 			//No hacen puerta
-
 			//...//
-			f.fwd(size/2 -1 ).door2().back(size/2 -1) 
+
+			//f.fwd(size/2 -1 ).door2().back(size/2 -1) 
 		}else{
 			//Si hacen puerta
 			//...//
-			f.fwd(size/2).door2().back(size/2)
+			
+			//f.fwd(size/2).door2().back(size/2)
 		}
 		f.turn()
 	};
