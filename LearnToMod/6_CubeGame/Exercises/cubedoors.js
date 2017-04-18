@@ -95,7 +95,7 @@ function doorscube(loc, size,material){
 		//esto es porque hay que hacer una correccion con la direccion
 		// Hay que utilizar la funcion DroneDir.js para conocer cual es la direccion de las puertas que faltan y corregir el movimiento
 
-		if (f.dir == 1 || f.dir == 2 ){
+		if (f.dir == 1 || f.dir == 3 ){
 			//No hacen puerta
 			//...//
 
@@ -103,7 +103,7 @@ function doorscube(loc, size,material){
 		}else{
 			//Si hacen puerta
 			//...//
-			
+
 			//f.fwd(size/2).door2().back(size/2)
 		}
 		f.turn()
@@ -134,7 +134,7 @@ function cube( loc, size, material){
 
 	for (var i = 0; i < size -1; i++) {
 		f.box0(material, size, 1, size);
-		f.down();
+		f.up();
 	};
 	f.box(material, size, 1, size);
 
@@ -162,5 +162,6 @@ function cube( loc, size, material){
 	//¿ Las puertas estan bien en todas las direcciones? 
 	//¿ El tamanio de los cubos afecta a el centro del cubo ?
 	//¿ Podemos ajustar las puertas para poder ir de un lado a otro ?
+	//¿ Afecta el valor del tamaño del cubo si es par o  impar?
 
 */
