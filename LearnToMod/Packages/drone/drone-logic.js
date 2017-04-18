@@ -1,5 +1,5 @@
-//var Drone = require('drone'); 
 var Drone = require('./drone').Drone;
+
 Drone.extend('lever', function(dir, mode){
 	var lever_UP = [8,7,0,15];
 	var lever_DOWN = [6,5,14,13];
@@ -20,6 +20,12 @@ Drone.extend('lever', function(dir, mode){
 	}
 
 	this.box(69+':'+lever_array[dir%4]);
+});
+
+Drone.extend('lamp', function(){
+
+	this.up().box(124).back().lever(this.dir+2);
+
 });
 
 Drone.extend('torch', function (dir,material ){
