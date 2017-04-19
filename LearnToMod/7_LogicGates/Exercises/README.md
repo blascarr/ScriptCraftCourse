@@ -13,7 +13,7 @@ Realización de cada uno de estos circuitos dentro de minecraft.
 <h2> Piston Clocks </h2>
 
 <p align="center">
-  <img  src="/src/images/LogicGates/Exercises/Piston_clocks.png" width="600"/>
+  <img  src="/src/images/LogicGates/Exercises/Piston_clocks.png" width="300"/>
 </p>
 
 <h2> Monostable </h2>
