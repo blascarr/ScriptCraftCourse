@@ -1,8 +1,8 @@
 function main(){
 	
 	var d = new Drone(me, me.location);
-	d.up().wire(18);
-	//d.lamp();
+	//d.up().wire(18);
+	d.lamp();
 
 	//d.inverter(5);
 	//d.diode();

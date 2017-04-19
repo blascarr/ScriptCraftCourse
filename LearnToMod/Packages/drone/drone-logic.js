@@ -51,17 +51,29 @@ Drone.extend('piston', function (dir,mode ){
 	if (mode==1){
 		material = 29;
 	}
-
-	this.box(material+':'+piston_DIR[dir%4]);
+	if (dir=='UP'){
+		this.box(material+':'+1);
+	}else if(dir=='DOWN'){
+		this.box(material+':'+0);
+	}else{
+		this.box(material+':'+piston_DIR[dir%4]);
+	}
+	
 	
 });
 
-Drone.extend('inverter', function ( material ){
-
+Drone.extend('inverter', function ( material , notmove){
+	if (notmove == true){
+		this.chkpt('inverter');
+	}
+	
 	this.box(material).fwd().torch(this.dir, 'REDSTONE');
+	if (notmove== true){
+		return this.move('inverter');    
+	}  
 });
 
-Drone.extend('diode' , function diode(dir,modeON ){
+Drone.extend('diode' , function (dir,modeON ){
 	var comparator_OFF = [1,2,3,0];
 	var comparator_ON = [5,6,7,8];
 	
@@ -74,4 +86,42 @@ Drone.extend('diode' , function diode(dir,modeON ){
 
 	this.box(material+':'+comparator_dir[dir%4]);
 	
+});
+
+Drone.extend('repeater' , function (dir, mode){
+	var material = 93;
+	if (mode ){
+		material = 94;
+	}
+	if (!dir){
+		this.box(material+':'+(this.dir+1)%4);
+	}else{
+		this.box(material+':'+(dir+1)%4);
+	}
+});
+
+Drone.extend('dispenser' , function (dir){
+	var dispenser_DIR = [5,3,4,2];
+	var material = 23;
+	if (dir=='UP'){
+		this.box(material+':'+1);
+	}else if(dir=='DOWN'){
+		this.box(material+':'+0);
+	}else{
+		this.box(material+':'+dispenser_DIR[dir%4]);
+	}
+});
+
+Drone.extend('hopper' , function (dir){
+	var hopper_DIR = [5,3,4,2];
+	var material = 154;
+	if (!dir){
+		this.box(material+':'+this.dir);
+	}else{
+		this.box(material+':'+hopper_DIR[dir%4]);
+	}
+});
+
+Drone.extend('hopper2' , function (){
+	this.hopper(this.dir).fwd().turn(2).hopper(this.dir).turn(2);
 });
