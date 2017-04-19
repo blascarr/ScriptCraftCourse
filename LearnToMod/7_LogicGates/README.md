@@ -4,7 +4,7 @@ En este apartado introduciremos los aspectos básicos de creación de puertas l�
 
 
 <p align="center">
-	<img  src="../../src/images/LogicGates/StandardLogicGates.jpg" width="600"/>
+	<img  src="/src/images/LogicGates/StandardLogicGates.jpg" width="600"/>
 </p>
 
 
@@ -16,16 +16,16 @@ En este apartado introduciremos los aspectos básicos de creación de puertas l�
   <li> NOT Gate</li>
 </ul>
 <p align="center">
-	<img  src="../../src/images/LogicGates/NOT_gate.png" width="300"/>
+	<img  src="/src/images/LogicGates/NOT_gate.png" width="300"/>
 </p>
 
 <p align="center">
-  <img  src="../../src/images/LogicGates/AND_gate.png" width="300"/>
-  <img  src="../../src/images/LogicGates/OR_gate.png" width="300"/>
+  <img  src="/src/images/LogicGates/AND_gate.png" width="300"/>
+  <img  src="/src/images/LogicGates/OR_gate.png" width="300"/>
 </p>
 <p align="center">
-  <img  src="../../src/images/LogicGates/NAND_gate.png" width="200"/>
-  <img  src="../../src/images/LogicGates/NOR_gate.png" width="200"/>
+  <img  src="/src/images/LogicGates/NAND_gate.png" width="200"/>
+  <img  src="/src/images/LogicGates/NOR_gate.png" width="200"/>
 </p>
 
 <h2> Advanced Gates</h2>
@@ -37,6 +37,6 @@ En este apartado introduciremos los aspectos básicos de creación de puertas l�
 </ul>
 
 <p align="center">
-  <img  src="../../src/images/LogicGates/XOR_gate.png" width="300"/>
-  <img  src="../../src/images/LogicGates/XNOR_gate.png" width="300"/>
+  <img  src="/src/images/LogicGates/XOR_gate.png" width="300"/>
+  <img  src="/src/images/LogicGates/XNOR_gate.png" width="300"/>
 </p>
